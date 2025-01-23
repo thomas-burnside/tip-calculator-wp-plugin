@@ -1,0 +1,87 @@
+/* Ensure full transparency for body and html */
+body.tip-calculator-active,
+html.tip-calculator-active {
+    background: none !important; /* Remove any background */
+    background-color: transparent !important; /* Explicitly set to transparent */
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
+}
+
+body.tip-calculator-active .et_pb_code_0 {
+    background: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.tip-calculator * {
+    box-sizing: border-box;
+}
+
+.tip-calculator body{
+    margin: 0px;
+    background: none;
+    background-color: transparent;
+    padding: 20px;
+}
+
+/* Scoped styles for the age calculator container */
+.tip-calculator .container{
+    background-color: white;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px 50px 50px 50px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.2);
+}
+
+/* Styles for text and form inside the container */
+.tip-calculator h1 {
+    font-family: "Libre Baskerville", serif;
+    margin-bottom: 15px;
+
+}
+
+.tip-calculator p{
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 15px;
+}
+
+.tip-calculator input{
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.tip-calculator label{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tip-calculator button{
+    color: white;
+    background-color: #0097b2;
+    border: 2px solid #ffbd59;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    font-size: 19px;
+    width: 100%;
+}
+
+.tip-calculator #total{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+.et_pb_code_0 {
+    background: none !important; /* Remove any background */
+    background-color: transparent !important; /* Force transparency */
+    box-shadow: none !important; /* Remove any default shadow */
+    border: none !important; /* Remove border if present */
+    padding: 0 !important; /* Reset padding if necessary */
+}
+
