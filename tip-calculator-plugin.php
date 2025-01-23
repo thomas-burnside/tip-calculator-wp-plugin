@@ -2,7 +2,7 @@
 /**
  * Plugin Name: TB #2 Tip Calculator 
  * Description: A simple tip calculator plugin for WordPress.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Thomas Burnside
  */
 
@@ -34,8 +34,7 @@ function tip_calculator_shortcode() {
     ob_start();
     ?>
     <div class="tip-calculator">
-    <div id="container"> 
-        <h1>Tip Calculator</h1>
+            <h1>Tip Calculator</h1>
         <p>Enter the bill amount and tip percentage</p>
         <label for="bill">Bill amount:</label>
         <input type="number" id="bill">
@@ -47,7 +46,6 @@ function tip_calculator_shortcode() {
         <br/>
         <label for="total">Total:</label>
         <span id="total"></span>
-    </div>
     </div>
     <?php
     return ob_get_clean();

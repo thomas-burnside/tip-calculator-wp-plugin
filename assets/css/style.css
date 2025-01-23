@@ -10,15 +10,7 @@
     box-sizing: border-box;
 }
 
-.tip-calculator body{
-    margin: 0px;
-    background: none;
-    background-color: transparent;
-    padding: 20px;
-}
-
-/* Scoped styles for the age calculator container */
-.tip-calculator #container{
+.tip-calculator{
     background-color: white;
     max-width: 600px;
     width: 100%;
@@ -27,7 +19,6 @@
     box-shadow: 0px 0px 20px rgba(0,0,0,.2);
 }
 
-/* Styles for text and form inside the container */
 .tip-calculator h1 {
     font-family: "Libre Baskerville", serif;
     margin-bottom: 15px;
