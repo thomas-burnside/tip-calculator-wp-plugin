@@ -10,16 +10,6 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
-function tip_calculator_body_class($classes) {
-    if (is_singular() && has_shortcode(get_post()->post_content, 'tip_calculator')) {
-        $classes[] = 'tip-calculator-active';
-    }
-    return $classes;
-}
-add_filter('body_class', 'tip_calculator_body_class');
-
-
-
 // Enqueue styles and scripts
 function tip_calculator_enqueue_assets() {
     if (is_singular() && has_shortcode(get_post()->post_content, 'tip_calculator')) {
@@ -44,7 +34,7 @@ function tip_calculator_shortcode() {
     ob_start();
     ?>
     <div class="tip-calculator">
-    <div class="container"> 
+    <div id="container"> 
         <h1>Tip Calculator</h1>
         <p>Enter the bill amount and tip percentage</p>
         <label for="bill">Bill amount:</label>

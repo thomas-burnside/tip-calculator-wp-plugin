@@ -1,18 +1,9 @@
-/* Ensure full transparency for body and html */
-body.tip-calculator-active,
-html.tip-calculator-active {
+.et_pb_code_0 {
     background: none !important; /* Remove any background */
-    background-color: transparent !important; /* Explicitly set to transparent */
-    margin: 0; /* Reset margins */
-    padding: 0; /* Reset padding */
-}
-
-body.tip-calculator-active .et_pb_code_0 {
-    background: none !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border: none !important;
-    padding: 0 !important;
+    background-color: transparent !important; /* Force transparency */
+    box-shadow: none !important; /* Remove any default shadow */
+    border: none !important; /* Remove border if present */
+    padding: 0 !important; /* Reset padding if necessary */
 }
 
 .tip-calculator * {
@@ -27,7 +18,7 @@ body.tip-calculator-active .et_pb_code_0 {
 }
 
 /* Scoped styles for the age calculator container */
-.tip-calculator .container{
+.tip-calculator #container{
     background-color: white;
     max-width: 600px;
     width: 100%;
@@ -77,11 +68,4 @@ body.tip-calculator-active .et_pb_code_0 {
     font-family: "Montserrat", sans-serif;
 }
 
-.et_pb_code_0 {
-    background: none !important; /* Remove any background */
-    background-color: transparent !important; /* Force transparency */
-    box-shadow: none !important; /* Remove any default shadow */
-    border: none !important; /* Remove border if present */
-    padding: 0 !important; /* Reset padding if necessary */
-}
 
